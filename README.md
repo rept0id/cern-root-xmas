@@ -7,5 +7,6 @@
 On system with CERN ROOT installed (refer to [https://root.cern/install/](https://root.cern/install/)):
 
 ```
-root -l main.cpp
+g++ main.cxx $(root-config --glibs --cflags --libs) -o cern-root-xmas
+./cern-root-xmas
 ```
